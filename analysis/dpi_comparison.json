@@ -1,0 +1,23 @@
+{
+  "page": "INV-23 page 1",
+  "200_dpi": {
+    "image_dimensions": "1654x2339",
+    "file_size_kb": 389.8,
+    "runtime_seconds": 5.101,
+    "blocks_count": 46,
+    "confidence_mean": 0.9953,
+    "confidence_min": 0.948,
+    "confidence_max": 1.0,
+    "text_length": 641
+  },
+  "300_dpi": {
+    "image_dimensions": "2481x3508",
+    "file_size_kb": 783.9,
+    "runtime_seconds": 3.398,
+    "blocks_count": 45,
+    "confidence_mean": 0.9948,
+    "confidence_min": 0.9649,
+    "confidence_max": 1.0,
+    "text_length": 639
+  }
+}

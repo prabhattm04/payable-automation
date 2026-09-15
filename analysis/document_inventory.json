@@ -1,0 +1,4555 @@
+{
+  "_schema": {
+    "version": "1.0.0",
+    "generated_at": "2026-09-14T05:30:19.506056+00:00",
+    "description": "Phase 5 document inventory. All classification fields are heuristic signals — not final extraction results."
+  },
+  "summary": {
+    "total_documents": 42,
+    "load_failures": 0,
+    "total_pages": 111,
+    "single_page_documents": 21,
+    "multi_page_documents": 21,
+    "fully_text_readable": 5,
+    "mixed_text_and_image": 0,
+    "image_only_documents": 37,
+    "documents_needing_ocr": 37,
+    "documents_needing_segmentation": 0,
+    "multi_currency_documents": 0,
+    "complex_tax_structure_documents": 2,
+    "document_classes": {
+      "unknown": 37,
+      "invoice": 5
+    },
+    "payable_status_distribution": {
+      "likely_non_payable": 37,
+      "likely_payable": 5
+    },
+    "languages_observed": {
+      "Portuguese": 5
+    },
+    "currencies_observed": {
+      "USD": 5
+    }
+  },
+  "documents": [
+    {
+      "file": "DU-02.pdf",
+      "filename": "DU-02.pdf",
+      "stem": "DU-02",
+      "file_size_bytes": 2925903,
+      "page_count": 20,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 20,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 3,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 4,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 5,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 6,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 7,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 8,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 9,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 10,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 11,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 12,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 13,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 14,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 15,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 16,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 17,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 18,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 19,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 20,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 20,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-03.pdf",
+      "filename": "DU-03.pdf",
+      "stem": "DU-03",
+      "file_size_bytes": 1964123,
+      "page_count": 12,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 12,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        },
+        {
+          "page_number": 3,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.4,
+          "height_pt": 842.4
+        },
+        {
+          "page_number": 4,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        },
+        {
+          "page_number": 5,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        },
+        {
+          "page_number": 6,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 7,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 8,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 9,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 10,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 11,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 12,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 12,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-05.pdf",
+      "filename": "DU-05.pdf",
+      "stem": "DU-05",
+      "file_size_bytes": 111731,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-05s.pdf",
+      "filename": "DU-05s.pdf",
+      "stem": "DU-05s",
+      "file_size_bytes": 1369438,
+      "page_count": 15,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 15,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 3,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 4,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 5,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 6,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 7,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 8,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 9,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 10,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 11,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 12,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 13,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 14,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 15,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 15,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-06.pdf",
+      "filename": "DU-06.pdf",
+      "stem": "DU-06",
+      "file_size_bytes": 329348,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-08.pdf",
+      "filename": "DU-08.pdf",
+      "stem": "DU-08",
+      "file_size_bytes": 158134,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-09.pdf",
+      "filename": "DU-09.pdf",
+      "stem": "DU-09",
+      "file_size_bytes": 291154,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.2,
+          "height_pt": 842.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-10.pdf",
+      "filename": "DU-10.pdf",
+      "stem": "DU-10",
+      "file_size_bytes": 118667,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 841.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "DU-11.pdf",
+      "filename": "DU-11.pdf",
+      "stem": "DU-11",
+      "file_size_bytes": 87449,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "HLD-01.pdf",
+      "filename": "HLD-01.pdf",
+      "stem": "HLD-01",
+      "file_size_bytes": 134943,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.2,
+          "height_pt": 841.8
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "HLD-03.pdf",
+      "filename": "HLD-03.pdf",
+      "stem": "HLD-03",
+      "file_size_bytes": 120168,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 842.0,
+          "height_pt": 595.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "HLD-05.pdf",
+      "filename": "HLD-05.pdf",
+      "stem": "HLD-05",
+      "file_size_bytes": 227052,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "HLD-08.pdf",
+      "filename": "HLD-08.pdf",
+      "stem": "HLD-08",
+      "file_size_bytes": 122461,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 592.0,
+          "height_pt": 839.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "HLD-10.pdf",
+      "filename": "HLD-10.pdf",
+      "stem": "HLD-10",
+      "file_size_bytes": 225189,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 841.9,
+          "height_pt": 595.3
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-01.pdf",
+      "filename": "INV-01.pdf",
+      "stem": "INV-01",
+      "file_size_bytes": 105815,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.4,
+          "height_pt": 842.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-02.pdf",
+      "filename": "INV-02.pdf",
+      "stem": "INV-02",
+      "file_size_bytes": 167705,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.9,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.9,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-03.pdf",
+      "filename": "INV-03.pdf",
+      "stem": "INV-03",
+      "file_size_bytes": 210441,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.2,
+          "height_pt": 841.8
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.2,
+          "height_pt": 841.8
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-04.pdf",
+      "filename": "INV-04.pdf",
+      "stem": "INV-04",
+      "file_size_bytes": 109285,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.2,
+          "height_pt": 841.8
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-06.pdf",
+      "filename": "INV-06.pdf",
+      "stem": "INV-06",
+      "file_size_bytes": 314387,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-07.pdf",
+      "filename": "INV-07.pdf",
+      "stem": "INV-07",
+      "file_size_bytes": 109315,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.2,
+          "height_pt": 841.8
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-09.pdf",
+      "filename": "INV-09.pdf",
+      "stem": "INV-09",
+      "file_size_bytes": 330388,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-10.pdf",
+      "filename": "INV-10.pdf",
+      "stem": "INV-10",
+      "file_size_bytes": 104030,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-11.pdf",
+      "filename": "INV-11.pdf",
+      "stem": "INV-11",
+      "file_size_bytes": 208834,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-13.pdf",
+      "filename": "INV-13.pdf",
+      "stem": "INV-13",
+      "file_size_bytes": 180313,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-14.pdf",
+      "filename": "INV-14.pdf",
+      "stem": "INV-14",
+      "file_size_bytes": 105537,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-15.pdf",
+      "filename": "INV-15.pdf",
+      "stem": "INV-15",
+      "file_size_bytes": 105499,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-16.pdf",
+      "filename": "INV-16.pdf",
+      "stem": "INV-16",
+      "file_size_bytes": 200971,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 841.9,
+          "height_pt": 595.3
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-19.pdf",
+      "filename": "INV-19.pdf",
+      "stem": "INV-19",
+      "file_size_bytes": 135609,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-20.pdf",
+      "filename": "INV-20.pdf",
+      "stem": "INV-20",
+      "file_size_bytes": 217276,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-21.pdf",
+      "filename": "INV-21.pdf",
+      "stem": "INV-21",
+      "file_size_bytes": 200958,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-23.pdf",
+      "filename": "INV-23.pdf",
+      "stem": "INV-23",
+      "file_size_bytes": 544863,
+      "page_count": 6,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 6,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.4,
+          "height_pt": 841.7
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 758.9,
+          "height_pt": 589.7
+        },
+        {
+          "page_number": 3,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 590.0,
+          "height_pt": 760.3
+        },
+        {
+          "page_number": 4,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 5,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 6,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 6,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-25.pdf",
+      "filename": "INV-25.pdf",
+      "stem": "INV-25",
+      "file_size_bytes": 317594,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.0,
+          "height_pt": 842.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-26.pdf",
+      "filename": "INV-26.pdf",
+      "stem": "INV-26",
+      "file_size_bytes": 171124,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.3,
+          "height_pt": 841.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-27.pdf",
+      "filename": "INV-27.pdf",
+      "stem": "INV-27",
+      "file_size_bytes": 232484,
+      "page_count": 2,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 2,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 2,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-28.pdf",
+      "filename": "INV-28.pdf",
+      "stem": "INV-28",
+      "file_size_bytes": 249682,
+      "page_count": 3,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 3,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 594.7,
+          "height_pt": 841.7
+        },
+        {
+          "page_number": 2,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 594.7,
+          "height_pt": 841.7
+        },
+        {
+          "page_number": 3,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 594.7,
+          "height_pt": 841.7
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 3,
+          "invoice_header_pages": [],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            [],
+            []
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-31.pdf",
+      "filename": "INV-31.pdf",
+      "stem": "INV-31",
+      "file_size_bytes": 1245094,
+      "page_count": 3,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 3,
+        "pages_without_native_text": 0,
+        "total_characters": 5674,
+        "total_words": 808,
+        "text_coverage": 1.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": true,
+          "character_count": 724,
+          "word_count": 124,
+          "extraction_method": "native",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 2,
+          "native_text_available": true,
+          "character_count": 2757,
+          "word_count": 366,
+          "extraction_method": "native",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_number": 3,
+          "native_text_available": true,
+          "character_count": 2193,
+          "word_count": 318,
+          "extraction_method": "native",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "invoice",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": [
+            "invoice keyword"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_payable",
+          "method": "heuristic",
+          "confidence": 0.825,
+          "evidence": [
+            "document class is invoice",
+            "total/amount-due keyword",
+            "payment terms keyword",
+            "supplier/vendor keyword",
+            "invoice number keyword"
+          ]
+        },
+        "scripts_detected": [
+          "latin"
+        ],
+        "language_hints": [
+          "Portuguese"
+        ],
+        "currency_candidates": [
+          "USD"
+        ],
+        "invoice_number_candidates": [
+          "Date",
+          "For",
+          "Number",
+          "OICE"
+        ],
+        "date_candidates": [
+          "04/17-05",
+          "04/17/2018",
+          "04/20/2018",
+          "04/27/18",
+          "05/16/18",
+          "05/16/2018",
+          "05/21/2018",
+          "05/23/2018",
+          "06/18/2018",
+          "06/19/2018",
+          "6/1/2018"
+        ],
+        "po_number_candidates": [
+          "16299",
+          "Box",
+          "rtion",
+          "wer"
+        ],
+        "financial_structure": {
+          "has_line_items": true,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": true,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": true,
+          "has_tax": true,
+          "has_withholding": false,
+          "has_total": true
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [
+            "ADJUSTMENT",
+            "CONSHOHOCKEN"
+          ],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [
+            "29 days"
+          ],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 3,
+          "invoice_header_pages": [
+            1
+          ],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [],
+            [
+              "USD"
+            ],
+            [
+              "USD"
+            ]
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 5,
+          "tax_words": 5,
+          "total_words": 8,
+          "date_patterns": 18,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-32.pdf",
+      "filename": "INV-32.pdf",
+      "stem": "INV-32",
+      "file_size_bytes": 276497,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 1,
+        "pages_without_native_text": 0,
+        "total_characters": 660,
+        "total_words": 129,
+        "text_coverage": 1.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": true,
+          "character_count": 660,
+          "word_count": 129,
+          "extraction_method": "native",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "invoice",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": [
+            "invoice keyword"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_payable",
+          "method": "heuristic",
+          "confidence": 0.825,
+          "evidence": [
+            "document class is invoice",
+            "total/amount-due keyword",
+            "payment terms keyword",
+            "supplier/vendor keyword",
+            "invoice number keyword"
+          ]
+        },
+        "scripts_detected": [
+          "latin"
+        ],
+        "language_hints": [
+          "Portuguese"
+        ],
+        "currency_candidates": [
+          "USD"
+        ],
+        "invoice_number_candidates": [
+          "4613",
+          "oice"
+        ],
+        "date_candidates": [
+          "06/05/2018",
+          "06/19/2018",
+          "5/31/18"
+        ],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": true,
+          "has_quantity": true,
+          "has_unit_price": false,
+          "has_line_amount": true,
+          "has_subtotal": true,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": true,
+          "has_withholding": false,
+          "has_total": true
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [
+            "30 days",
+            "net 14"
+          ],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 3,
+          "tax_words": 1,
+          "total_words": 1,
+          "date_patterns": 3,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-33.pdf",
+      "filename": "INV-33.pdf",
+      "stem": "INV-33",
+      "file_size_bytes": 93674,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 0,
+        "total_words": 0,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 0,
+          "word_count": 0,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 595.2,
+          "height_pt": 841.4
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-34.pdf",
+      "filename": "INV-34.pdf",
+      "stem": "INV-34",
+      "file_size_bytes": 78541,
+      "page_count": 3,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 3,
+        "pages_without_native_text": 0,
+        "total_characters": 1348,
+        "total_words": 243,
+        "text_coverage": 1.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": true,
+          "character_count": 1001,
+          "word_count": 178,
+          "extraction_method": "native",
+          "has_images": true,
+          "width_pt": 623.6,
+          "height_pt": 892.9
+        },
+        {
+          "page_number": 2,
+          "native_text_available": true,
+          "character_count": 130,
+          "word_count": 25,
+          "extraction_method": "native",
+          "has_images": false,
+          "width_pt": 623.6,
+          "height_pt": 892.9
+        },
+        {
+          "page_number": 3,
+          "native_text_available": true,
+          "character_count": 217,
+          "word_count": 40,
+          "extraction_method": "native",
+          "has_images": false,
+          "width_pt": 623.6,
+          "height_pt": 892.9
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "invoice",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": [
+            "invoice keyword"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_payable",
+          "method": "heuristic",
+          "confidence": 0.825,
+          "evidence": [
+            "document class is invoice",
+            "total/amount-due keyword",
+            "payment terms keyword",
+            "supplier/vendor keyword",
+            "invoice number keyword"
+          ]
+        },
+        "scripts_detected": [
+          "latin"
+        ],
+        "language_hints": [
+          "Portuguese"
+        ],
+        "currency_candidates": [
+          "USD"
+        ],
+        "invoice_number_candidates": [
+          "Number",
+          "Page"
+        ],
+        "date_candidates": [
+          "19/07/2015",
+          "20/06/2015",
+          "27/06/2015"
+        ],
+        "po_number_candidates": [
+          "rtion"
+        ],
+        "financial_structure": {
+          "has_line_items": true,
+          "has_quantity": true,
+          "has_unit_price": false,
+          "has_line_amount": true,
+          "has_subtotal": true,
+          "has_discount": false,
+          "has_charges": true,
+          "has_tax": true,
+          "has_withholding": false,
+          "has_total": true
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": true,
+          "page_count": 3,
+          "invoice_header_pages": [
+            1
+          ],
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "currencies_by_page": [
+            [
+              "USD"
+            ],
+            [
+              "USD"
+            ],
+            [
+              "USD"
+            ]
+          ],
+          "note": "heuristic — verify manually"
+        },
+        "keyword_hits": {
+          "invoice_words": 2,
+          "tax_words": 5,
+          "total_words": 6,
+          "date_patterns": 6,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-35.pdf",
+      "filename": "INV-35.pdf",
+      "stem": "INV-35",
+      "file_size_bytes": 68106,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 0,
+        "pages_without_native_text": 1,
+        "total_characters": 18,
+        "total_words": 3,
+        "text_coverage": 0.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": false,
+          "character_count": 18,
+          "word_count": 3,
+          "extraction_method": "none",
+          "has_images": true,
+          "width_pt": 1276.0,
+          "height_pt": 1651.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "unknown",
+          "method": "heuristic",
+          "confidence": 0.1,
+          "evidence": [
+            "no strong signals"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_non_payable",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": []
+        },
+        "scripts_detected": [],
+        "language_hints": [],
+        "currency_candidates": [],
+        "invoice_number_candidates": [],
+        "date_candidates": [],
+        "po_number_candidates": [
+          "1000020040"
+        ],
+        "financial_structure": {
+          "has_line_items": false,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": false,
+          "has_subtotal": false,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": false,
+          "has_withholding": false,
+          "has_total": false
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 0,
+          "tax_words": 0,
+          "total_words": 0,
+          "date_patterns": 0,
+          "currency_codes": 0
+        }
+      }
+    },
+    {
+      "file": "INV-36.pdf",
+      "filename": "INV-36.pdf",
+      "stem": "INV-36",
+      "file_size_bytes": 11241,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 1,
+        "pages_without_native_text": 0,
+        "total_characters": 1216,
+        "total_words": 195,
+        "text_coverage": 1.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": true,
+          "character_count": 1216,
+          "word_count": 195,
+          "extraction_method": "native",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "invoice",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": [
+            "invoice keyword",
+            "remittance keyword"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_payable",
+          "method": "heuristic",
+          "confidence": 0.825,
+          "evidence": [
+            "document class is invoice",
+            "total/amount-due keyword",
+            "payment terms keyword",
+            "supplier/vendor keyword",
+            "invoice number keyword"
+          ]
+        },
+        "scripts_detected": [
+          "latin"
+        ],
+        "language_hints": [
+          "Portuguese"
+        ],
+        "currency_candidates": [
+          "USD"
+        ],
+        "invoice_number_candidates": [
+          "DATE",
+          "FOR",
+          "Federal",
+          "NUMBER"
+        ],
+        "date_candidates": [],
+        "po_number_candidates": [
+          "1000021496",
+          "Box"
+        ],
+        "financial_structure": {
+          "has_line_items": true,
+          "has_quantity": true,
+          "has_unit_price": false,
+          "has_line_amount": true,
+          "has_subtotal": true,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": true,
+          "has_withholding": false,
+          "has_total": true
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [
+            "DESCRIPTION",
+            "INSTRUCTIONS",
+            "REMITTANCE",
+            "SALESPERSON"
+          ],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 4,
+          "tax_words": 3,
+          "total_words": 3,
+          "date_patterns": 0,
+          "currency_codes": 1
+        }
+      }
+    },
+    {
+      "file": "INV-37.pdf",
+      "filename": "INV-37.pdf",
+      "stem": "INV-37",
+      "file_size_bytes": 267251,
+      "page_count": 1,
+      "load_error": "",
+      "text": {
+        "pages_with_native_text": 1,
+        "pages_without_native_text": 0,
+        "total_characters": 2038,
+        "total_words": 413,
+        "text_coverage": 1.0
+      },
+      "pages": [
+        {
+          "page_number": 1,
+          "native_text_available": true,
+          "character_count": 2038,
+          "word_count": 413,
+          "extraction_method": "native",
+          "has_images": true,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ],
+      "classification": {
+        "document_class": {
+          "value": "invoice",
+          "method": "heuristic",
+          "confidence": 0.5,
+          "evidence": [
+            "invoice keyword"
+          ]
+        },
+        "payable_status": {
+          "value": "likely_payable",
+          "method": "heuristic",
+          "confidence": 0.625,
+          "evidence": [
+            "document class is invoice",
+            "total/amount-due keyword",
+            "payment terms keyword"
+          ]
+        },
+        "scripts_detected": [
+          "latin"
+        ],
+        "language_hints": [
+          "Portuguese"
+        ],
+        "currency_candidates": [
+          "USD"
+        ],
+        "invoice_number_candidates": [
+          "Date",
+          "oice"
+        ],
+        "date_candidates": [
+          "01/01/14",
+          "07/23/03",
+          "6/12/2018"
+        ],
+        "po_number_candidates": [],
+        "financial_structure": {
+          "has_line_items": true,
+          "has_quantity": false,
+          "has_unit_price": false,
+          "has_line_amount": true,
+          "has_subtotal": true,
+          "has_discount": false,
+          "has_charges": false,
+          "has_tax": true,
+          "has_withholding": false,
+          "has_total": true
+        },
+        "master_data_signals": {
+          "supplier_name_hints": [],
+          "vat_id_candidates": [
+            "ASSOCIATES",
+            "ELECTRICAL",
+            "REIMBURSEMENT"
+          ],
+          "iban_candidates": [],
+          "po_reference_candidates": [],
+          "payment_term_hints": [
+            "30 days"
+          ],
+          "buyer_org_hints": []
+        },
+        "page_relationship": {
+          "is_multi_page": false,
+          "page_count": 1,
+          "possible_supporting_pages": [],
+          "requires_segmentation": false,
+          "multi_currency_pages": false,
+          "note": "single page or no text"
+        },
+        "keyword_hits": {
+          "invoice_words": 2,
+          "tax_words": 3,
+          "total_words": 8,
+          "date_patterns": 4,
+          "currency_codes": 0
+        }
+      }
+    }
+  ]
+}

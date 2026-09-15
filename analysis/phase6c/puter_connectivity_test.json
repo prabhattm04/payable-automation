@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-14T09:00:14.138759+00:00",
+  "provider": "Puter",
+  "model": "qwen/qwen3-vl-plus-2025-12-19",
+  "prompt": "Respond with exactly: PUTER_QWEN_TEST_OK",
+  "success": true,
+  "latency_seconds": 1.7802,
+  "response_content": "PUTER_QWEN_TEST_OK",
+  "error": null,
+  "metadata": {
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 19,
+      "completion_tokens": 8,
+      "cached_tokens": 0,
+      "usd_cents": 0.00166
+    },
+    "endpoint": "https://api.puter.com/drivers/call"
+  }
+}

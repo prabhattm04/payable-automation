@@ -1,0 +1,20 @@
+{
+  "document": "DU-02",
+  "page": 5,
+  "image_path": "artifacts/rendered_pages/DU-02/page_005.png",
+  "model": "qwen/qwen3-vl-plus-2025-12-19",
+  "prompt_version": "phase6c-v1",
+  "latency_seconds": 14.1729,
+  "status": "success",
+  "response": "Based on the visible evidence in the provided image:\n\n1. **Document type**: This appears to be a single-row data table, likely a cargo or shipping specification sheet (e.g., part of a bill of lading, packing list, or freight manifest). It contains physical dimensions and weight metrics for a shipment unit, not a financial invoice.\n\n2. **Payable/invoice vs. supporting vs. non-payable**: The page is **supporting documentation**—specifically, a measurement/weight summary table. It contains no pricing, terms, due dates, payment instructions, or vendor/customer identifiers. Monetary amounts are absent; only physical quantities are listed. Thus, it is non-payable *on its own* and would typically accompany a payable document.\n\n3. **Major sections and spatial relationships**:  \n   - There is **one primary section**: a single-row table with 10 columns.  \n   - The table occupies the top portion of the page; the rest is blank white space.  \n   - A small “CID” label appears in the bottom-left corner (likely a system or page identifier), separate from the table.\n\n4. **Table description**:  \n   - **Columns (left to right)**:  \n     1. *No. of Boxes*  \n     2. *Net Weight*  \n     3. *Ice Weight*  \n     4. *Gross Weight*  \n     5. *UOM* (unit of measure for weight)  \n     6. *Length*  \n     7. *Width*  \n     8. *Height*  \n     9. *UOM* (unit of measure for dimensions)  \n     10. *Volume*  \n     11. *UOM* (unit of measure for volume)  \n   - **Rows**: Exactly one data row (row index 1).  \n   - **Alignment**: All values align under their respective column headers. Numeric values are right-aligned (as typical for tables); UOMs are left-aligned within their cells.  \n   - **Header row**: Gray background, bold text; data row: white background.\n\n5. **Monetary amounts**: **None visible**. All numeric entries represent physical measurements (weights, dimensions, volume), not currency.\n\n6. **Taxes, discounts, charges, totals**: **None present**. The table contains only descriptive/quantitative shipment data. No subtotal, tax, discount, freight charge, or grand total fields appear.\n\n7. **Evidence of continuation/supporting page**:  \n   - The presence of only one row suggests this may be a partial or excerpted view (e.g., one item from a multi-item shipment list).  \n   - The “CID” label in the bottom-left corner may indicate a system-generated page ID, common in multi-page electronic documents (e.g., EDI outputs or ERP printouts).  \n   - Absence of standard invoice header/footer (date, supplier, recipient, invoice number) supports that this is not a standalone invoice but supplementary.  \n   - However, no explicit “Page X of Y”, “Continued from…”, or cross-references are visible—so while *suggestive* of a supporting page, this cannot be definitively confirmed from visible content alone.\n\n8. **Invoice/order/reference numbers**: **None visible**. No field labeled “Invoice No.”, “PO No.”, “Ref.”, “Shipment No.”, or similar appears anywhere on the page.\n\nAll observations are strictly based on visible text, layout, and structure; no external assumptions or calculations have been made.",
+  "metadata": {
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 2730,
+      "completion_tokens": 739,
+      "cached_tokens": 0,
+      "usd_cents": 0.17284
+    },
+    "image_size_bytes": 106487
+  }
+}

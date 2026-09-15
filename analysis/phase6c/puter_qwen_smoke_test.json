@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-14T09:00:29.733903+00:00",
+  "provider": "Puter",
+  "model": "qwen/qwen3-vl-plus-2025-12-19",
+  "image_path": "artifacts\\rendered_pages\\INV-01\\page_001.png",
+  "prompt": "Analyze this document visually. Describe:\nthe apparent document type,\nthe major sections,\nthe spatial relationship between labels and values,\nwhether there is a table and how its rows/columns are organized.\nDo not calculate totals.\nDo not invent values.\nDo not produce final payable JSON.\nDo not make accounting decisions.",
+  "success": true,
+  "latency_seconds": 15.5875,
+  "response_length_chars": 2610,
+  "response_content": "**Apparent Document Type**:  \nThis is a German-language commercial invoice (Rechnung), issued by a company (\u201cNorthwind Operations O\u00dc\u201d) to an individual recipient (\u201cHerrn Alex Kask\u201d).\n\n**Major Sections**:  \n1. **Sender information** \u2013 Top-left: issuer\u2019s name, address, and location (Estonia).  \n2. **Recipient salutation & context** \u2013 \u201cSehr geehrter Herr Kask,\u201d followed by a project reference sentence.  \n3. **Invoice header block** \u2013 Top-right: invoice number (*Rechnung Nr.*), date (*Rechnungsdatum*), customer number (*Kunden-Nr.*), account manager name and email.  \n4. **Line-item table** \u2013 Central section with columns for position (*Pos*), description (*Beschreibung*), unit price (*Einzelpreis*), quantity (*Menge*), and total per line (*Gesamtpreis*).  \n5. **Summary totals block** \u2013 Below the table: delivery/performance period, subtotal (*Gesamtsumme*), VAT line (*zzgl. 0 % MwSt*), and final amount (*Endbetrag*).  \n6. **Payment instructions** \u2013 Includes due date, VAT ID, reverse charge notice, and polite closing.  \n7. **Footer/Reference section** \u2013 Contains \u201cE-Rechnung Angaben: : Rechnung\u201d and a QR-code payment instruction (\u201ceisen per Code\u201d).\n\n**Spatial Relationship Between Labels and Values**:  \n- Labels (e.g., *Rechnung Nr.*, *Rechnungsdatum*, *Kunden-Nr.*) are left-aligned in the top-right header block; their corresponding values are placed immediately to the right, on the same line.  \n- In the line-item table, column headers are centered above their respective data columns; values under each header align vertically beneath them (left-aligned for *Beschreibung*, right-aligned for numeric fields like *Einzelpreis*, *Menge*, *Gesamtpreis*).  \n- In the summary block, labels like *Gesamtsumme*, *zzgl. 0 % MwSt*, and *Endbetrag* are left-aligned, with their numeric values right-aligned on the same line.  \n- The phrase \u201cLiefer-/Leistungsdatum: \u2026\u201d is left-aligned, with its value spanning across to the right, aligned with the numeric column.\n\n**Table Presence and Organization**:  \nYes, there is a table with four columns:  \n- **Pos** (position number)  \n- **Beschreibung** (description)  \n- **Einzelpreis** (unit price)  \n- **Menge** (quantity)  \n- **Gesamtpreis** (line total)  \n\nThe table has two data rows (positions 1 and 2), followed by three summary rows (delivery period, subtotal, VAT, end amount) that share the same column alignment but are not part of the main itemized table\u2014they appear as continuation rows beneath it, using the same right-aligned numeric formatting. Column headers are bolded and separated from data rows by horizontal spacing (no visible grid lines).",
+  "error": null,
+  "metadata": {
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 2592,
+      "completion_tokens": 664,
+      "cached_tokens": 0,
+      "usd_cents": 0.15808
+    },
+    "endpoint": "https://api.puter.com/drivers/call",
+    "image_path": "D:\\candidate_kit\\artifacts\\rendered_pages\\INV-01\\page_001.png",
+    "image_size_bytes": 533895
+  }
+}
