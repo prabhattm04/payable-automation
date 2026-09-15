@@ -1,135 +1,326 @@
-# The Bookable Payable
-### A 3–4 day engineering challenge
+# Autonomous Bookable Payable Pipeline
 
-> You will build a system that turns a supplier document into records an accounting system can book. This is not a document-extraction task, though it will look like one for the first few hours. Read the whole brief — including the last section — before you write anything.
+[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
+[![Test Suite](https://img.shields.io/badge/Tests-732%20Passed-brightgreen.svg)]()
+[![License](https://img.shields.io/badge/Architecture-Deterministic%20Pipeline-orange.svg)]()
 
----
-
-## The mandate
-
-Given a supplier document as a PDF, produce structured **autodrafts** — the records a downstream accounting system (the *ERP*) uses to book what is owed. You are given the exact record shape, a set of real documents, the reference data the ERP matches against, and one program — `erp.py` — that tells you the gross the ERP will book for any payable you produce.
-
-Your goal is simple to state. Make as many of the documents book correctly as you can.
-
-It is not simple to do. If it were, it would not take three days.
+An end-to-end, production-grade document processing system that transforms complex, multilingual supplier PDF documents into structured, bookable **autodraft** records that an ERP accounting system can book without human intervention.
 
 ---
 
-## What you are building
+## 1. Executive Summary & The Mandate
 
-For each PDF, your system must decide **what the document is** and **what, if anything, is owed**, and emit one record per bookable payable. A single PDF may contain **no** payable, **one**, or **several** — and may include pages that are not payables at all. Getting that right is part of the task, not a preprocessing detail.
+Given a supplier PDF document, this system determines:
+1. **What the document is** (Invoice, Credit Memo, Delivery Note, Order Confirmation, or Non-payable supporting material).
+2. **What, if anything, is owed**, extracting line items, charges, discounts, and multi-tier tax treatments.
+3. **Master Data Resolution**: Links observed supplier entities, buyer organizational hierarchy (Company, Business Unit, Location), tax classifications, purchase orders, and payment terms against master records.
+4. **Accounting Integrity**: Satisfies the exact mathematical and structural constraints of the sealed ERP oracle (`erp.py`), guaranteeing that every emitted autodraft reconstructs the exact gross amount owed down to the cent without fabricated or artificial balancing figures.
 
-Where a value has a master-data entry — supplier, tax, buyer org, payment term, PO — resolve it against `master_data/` and set the corresponding code in the autodraft; leave that code blank only when there is genuinely no match.
+### The Core Problem: Visual Copying vs. Accounting Truth
+A document extractor that faithfully copies visual text blocks will fail in real-world ERP systems. Accounting documents contain:
+- Mixed currencies across invoice pages and supporting timesheets/receipts.
+- Withholding taxes, cascading levies, and compound rates stated at varying line vs. header levels.
+- Non-payable attachments (bank confirmations, delivery receipts, terms of service) bundled with invoices.
+- Ambiguous or partial supplier identities requiring robust fuzzy and relational resolution.
 
----
-
-## Your materials
-
-| | |
-|---|---|
-| **`documents/`** | Real documents, provided as PDFs (mostly page images — extraction via OCR / vision / an LLM is up to you). Some are graded in the open; others are held back. Many currencies, several languages, 1–35 lines each. Not every one is an invoice, and **nothing is labelled or categorised.** |
-| **`erp.py`** | The ERP recompute. Feed it a payable; it returns the gross it will book. Python 3.10+, **standard library only** (nothing to install). See below. |
-| **`example_check.py`** | A minimal usage example: loads a payable JSON and prints `erp_book(...)`'s gross, so you can see which call to make. `python example_check.py [your_payable.json]`. |
-| **`AUTODRAFT_SCHEMA.md`** | The exact record shape your system must output. |
-| **`master_data/`** | Suppliers, tax reference, organisational structure, payment terms, POs — the reference data you resolve document values against to fill the master-data codes. How to match is up to you. **These are sample rows; real masters scale to hundreds of thousands / millions — design matching accordingly.** |
-| **`sample_autodraft.json`** | One worked payable, to show the shape. |
+This pipeline does not merely extract tokens — it reconstructs the underlying **financial fact model**, normalizes its accounting structure, reconciles arithmetic across three independent sources of truth, and enforces rigorous safety gates before clearing any autodraft.
 
 ---
 
-## The oracle, and what it refuses to tell you
+## 2. Pipeline Architecture
 
-`erp.py` takes one payable, recomputes it exactly as the ERP will, and returns:
+The pipeline processes documents through a multi-stage sequential architecture:
 
 ```
-{ "will_book_gross": 216.48, "currency": "EUR" }
+                          ┌────────────────────────┐
+                          │    Supplier PDF File   │
+                          └───────────┬────────────┘
+                                      │
+                 ┌────────────────────┴────────────────────┐
+                 ▼                                         ▼
+      ┌──────────────────────┐                  ┌──────────────────────┐
+      │  PyMuPDF Text Extract│                  │  PyMuPDF DPI-200 PNG │
+      └──────────┬───────────┘                  └──────────┬───────────┘
+                 │                                         │
+                 ▼                                         ▼
+      ┌──────────────────────┐                  ┌──────────────────────┐
+      │ Text Heuristics      │                  │ RapidOCR (PP-OCRv5)  │
+      │ (Fast Classification)│                  │ (Latin / Thai ONNX)  │
+      └──────────┬───────────┘                  └──────────┬───────────┘
+                 │                                         │
+                 └────────────────────┬────────────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ Unified Evidence Model    │
+                        │ (BBoxes, Text, Confidence)│
+                        └─────────────┬─────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ Page Role Classifier      │
+                        │ & Document Grouper        │
+                        └─────────────┬─────────────┘
+                                      │
+               ┌──────────────────────┴──────────────────────┐
+               │ [Confidence Gate]                           │
+               ▼                                             ▼
+     [High OCR Confidence]                         [Low Confidence / Scan]
+               │                                             │
+               │                                             ▼
+               │                                   ┌───────────────────┐
+               │                                   │ Qwen-VL via Puter │
+               │                                   └─────────┬─────────┘
+               │                                             │
+               └──────────────────────┬──────────────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ Semantic Candidate Extract│
+                        │ (Dates, Parties, Lines,   │
+                        │  Taxes, Gross, Subtotals) │
+                        └─────────────┬─────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ Fact Model Consolidation  │
+                        │ (Immutable DocumentFacts) │
+                        └─────────────┬─────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ Master Data Matchers      │
+                        │ - Supplier (Tax ID/Fuzzy) │
+                        │ - Buyer Org Hierarchy     │
+                        │ - Tax Master (Rate/Type)  │
+                        │ - PO & Payment Terms      │
+                        └─────────────┬─────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ Financial Assembly        │
+                        │ & Extraction Validation   │
+                        └─────────────┬─────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ Structure Normalization   │
+                        │ & ERP Reconstruction      │
+                        └─────────────┬─────────────┘
+                                      ▼
+                        ┌───────────────────────────┐
+                        │ 3-Way Reconciliation      │
+                        │ & Safety Decision Arbiter │
+                        └─────────────┬─────────────┘
+                                      │
+                     ┌────────────────┴────────────────┐
+                     ▼                                 ▼
+           [SAFE_TO_AUTODRAFT]               [HOLD_FOR_REVIEW / UNSAFE]
+                     │                                 │
+                     ▼                                 ▼
+        ┌─────────────────────────┐       ┌─────────────────────────┐
+        │ Emit Bookable Autodraft │       │ Route to Declined / Hold│
+        │ in output/<id>.json     │       │ with Detailed Reasons   │
+        └─────────────────────────┘       └─────────────────────────┘
 ```
 
-That is the entire response. It tells you the number the ERP will book. It will never tell you whether that number is right, which field is wrong, which line, which tax, or why. That silence is deliberate.
-
-Read `erp.py`. It is short, and it is the exact contract you must satisfy — how the ERP turns your components into a gross. Knowing *how the machine computes* is not the same as knowing *what is unusual about any given document*. The second one is the work.
-
-**`erp.py` is fixed. Do not change how it computes a gross** — we grade with the original, so any edit to its recompute is invisible to us and worthless to you. You may freely *import* it (`from erp import erp_book`), wrap it, or build tooling around it; you may even re-implement it elsewhere for speed. The one thing that must not change is the core calculation. Treat it as a sealed black box you call, not code you own.
-
 ---
 
-## What "correct" means, precisely
+## 3. Project Structure
 
-A payable is correct when the ERP's own recomputation — **from the parts you supplied** — arrives at what the document genuinely says is owed, to the cent.
-
-Sit with the shape of that sentence before you code. You are not being asked whether your output *looks like the document*. You are being asked whether a machine that rebuilds the total from your pieces reaches the truth. A record can mirror the page faithfully and still fail to book. Many of these documents are exactly that record. Understanding how a faithful copy can be a wrong answer is the first door you have to walk through, and most of the difficulty is behind it.
-
-Note too: the ERP can reach the right gross by the wrong path. Two different structures can foot to the same number, and only one of them is the payable that should be booked. Matching the total is necessary. It is not sufficient, and it is not the goal.
-
-**Your autodraft must mirror the document's structure, not just its total.** The grader inspects the shape you emit, not only the number it foots to:
-
-- **Placement is faithful.** A tax the document charges *at the line* belongs on that line (`line_items[].taxes[]` / the line's `tax_rate`); a tax stated *once at the header* belongs at the header (`taxes[]`). Do not migrate a tax from where the document puts it to wherever makes the arithmetic easier — a header rate invented over lines that carry their own rates, or per-line taxes collapsed into one header figure, is wrong even when it foots.
-- **Each tax is represented correctly** — its **name**, its **rate**, and its **amount** as the document states them. A line with its own rate keeps that rate; a document with three rates across its lines yields three line-level taxes, not one blended rate.
-- **Components stay decomposed.** Quantities, unit prices, discounts, charges and levies go in the fields that describe them — not pre-summed, not folded into each other. If the document itemises it, your record itemises it.
-
-Same total, wrong structure, is a wrong answer. Reproduce *what the document says and where it says it*.
-
----
-
-## Output contract
-
-Your system runs with **one command** over the `documents/` directory and writes, for each input `X.pdf`, a file `output/X.json` — put **all** results in an `output/` folder (create it if absent), one JSON per input PDF:
-
-```jsonc
-{
-  "file": "X.pdf",
-  "payables": [            // 0..N bookable payables, each conforming to AUTODRAFT_SCHEMA.md
-    { "invoice_type": "INVOICE", "currency": "EUR", "gross_total": "...",
-      "line_items": [ ... ], "taxes": [ ... ], ... }
-  ],
-  "declined": [            // any documents you determine are NOT payables (may be empty)
-    { "doc_type": "...", "reason": "why this is not a payable" }
-  ]
-}
+```
+├── erp.py                     # Sealed ERP Oracle (ground-truth recompute)
+├── example_check.py           # Verification script for testing autodraft against erp.py
+├── run_pipeline.py            # Primary CLI orchestrator for batch and single-file runs
+├── AUTODRAFT_SCHEMA.md        # Canonical autodraft JSON schema specification
+├── README.md                  # Project overview, setup, and architecture documentation
+├── requirements.txt           # Python dependencies
+├── .env.example               # Environment variable template for vision inference
+├── .gitignore                 # Standard Python/project ignore rules
+│
+├── master_data/               # Master reference datasets (JSON)
+│   ├── suppliers.json         # Known vendor identities, VAT/tax IDs, addresses
+│   ├── chart_of_books.json    # Organizational hierarchy (Company, BU, Location)
+│   ├── tax_master.json        # Tax types, jurisdiction codes, rates
+│   ├── payment_terms.json     # Standard payment terms and identifiers
+│   └── po_master.json         # Purchase order references and line mappings
+│
+├── documents/                 # Challenge evaluation PDF corpus (36 documents)
+├── models/                    # Offline ONNX models & dictionaries for OCR
+│   └── ocr/
+│       ├── latin/             # PP-OCRv5 Latin recognition model & dictionary
+│       └── thai/              # PP-OCRv5 Thai recognition model & dictionary
+│
+├── src/                       # Production source code
+│   ├── accounting/            # Financial structure normalization, ERP reconstruction, reconciliation, safety decision
+│   ├── extraction/            # OCR engine, candidate extraction, fact consolidation, financial assembly, validation
+│   ├── matching/              # Deterministic & fuzzy master-data matchers (Supplier, Buyer, Tax, PO, Terms)
+│   ├── understanding/         # Unified evidence models, page classification, document grouping, vision router
+│   ├── pdf/                   # High-fidelity PyMuPDF rendering & native text extraction
+│   ├── inventory/             # Document inventory and feature classification
+│   ├── vision/                # Puter AI / Qwen-VL vision API provider
+│   └── utils/                 # Logging and string normalization utilities
+│
+├── tests/                     # Comprehensive test suite (28 test modules, 730+ tests)
+└── analysis/                  # Research benchmarks, hardware reports, and inventory manifests
 ```
 
-- One entry in `payables[]` per bookable payable. A document with several payables ⇒ several entries; a document that is not a payable ⇒ `payables: []`.
-- A **credit** is a payable of type `CREDIT_MEMO`. It uses the **same schema — the same keys** as any payable; only the values differ. Set `invoice_type: "CREDIT_MEMO"` and fill the ordinary fields (`line_items`, `taxes`, `gross_total`, …) with the credit memo's own figures, as **positive** magnitudes (see `erp.py`'s sign handling). There is no separate credit-memo shape — same record, credit values.
-- Anything you judge **not** a payable goes in `declined[]`, never in `payables[]`.
+---
 
-Provide a `README` with a single documented command (a script or a `Dockerfile`) that runs your system over a folder of PDFs and produces these files. We will re-run it.
+## 4. Setup & Installation
 
-## Three rules — enforced, and also clues
+### Prerequisites
+- Python **3.10**, **3.11**, or **3.12**
+- Git
 
-1. **Every value you emit must appear on the document.** A number that is in your output only because it made the total come out right disqualifies that payable. If you are ever tempted to invent a figure to balance the books, the temptation is telling you something true about the document — listen to it instead of acting on it.
-2. **Every code you emit must be a real match** against the master data. "No match" is a legitimate answer. A confident, fabricated code is not.
-3. **Any correction your system makes must survive being wrong.** Some documents are built to *look* like they need a fix they do not. A fix that fires where it shouldn't — and corrupts a document that was already correct — costs you more than never fixing anything. Before your system changes a record, ask what independent fact gives it the right to.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/prabhattm04/payable-automation.git
+cd payable-automation
+```
+
+### 2. Create and Activate a Virtual Environment
+```bash
+# On Linux / macOS:
+python3 -m venv .venv
+source .venv/bin/activate
+
+# On Windows (PowerShell):
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment (Optional for Vision Escalation)
+The pipeline runs completely offline using local PyMuPDF and RapidOCR with bundled ONNX models. If you wish to enable the optional Qwen Vision escalation for low-confidence scans:
+```bash
+cp .env.example .env
+# Edit .env and insert your Puter API key:
+# PUTER_API_KEY=your_token_here
+```
 
 ---
 
-## What you submit
+## 5. Usage & CLI Commands
 
-- The working system (any stack; one documented command over `documents/` writing to `output/`).
-- Your generated `output/*.json` for the open documents.
-- **`DESIGN.md` (≤3 pages).** Not a feature list. Answer three questions honestly:
-  - What did you eventually understand about these documents that you did not understand on day one?
-  - When your system meets a document unlike any it has seen, what does it actually *do* — and why does that generalise instead of guessing?
-  - Was there a document you concluded could **not** be solved the way the others were? If so, which, and how did you know?
+### Single Documented Command (Processes all `documents/` into `output/`)
+In accordance with the project contract, the system runs with a single command over the input document folder and generates `output/<stem>.json` for each file:
 
-The third question is not padding. At least one document asks something of you that the page does not contain the answer to. Recognising that, and refusing to fake it, is worth more than any code that pretends otherwise.
+```bash
+python run_pipeline.py --documents-dir documents --output-dir output
+```
+
+### Single Document Execution
+To execute the pipeline on an individual document:
+```bash
+python run_pipeline.py --filter INV-01.pdf --output-dir output
+```
+
+### Validating Outputs with the ERP Oracle
+To test any generated autodraft JSON against the sealed ERP oracle (`erp.py`):
+```bash
+# Using the example checker:
+python example_check.py output/INV-01.json
+
+# Or directly invoking erp.py:
+python erp.py output/INV-01.json
+```
+
+Example output:
+```text
+will_book_gross = 438.0 EUR
+```
 
 ---
 
-## How you are judged
+## 6. Engineering & Implementation Highlights
 
-In the open, your score reflects how many documents book, whether you identified the right payables (and correctly set aside what is not a payable), and a check of what the oracle cannot see — that your codes are real and every value is grounded in the document.
+### 1. Dual-Tier Text Extraction (RapidOCR + PP-OCRv5 ONNX)
+- Native PyMuPDF text extraction extracts character vectors and font metadata when available.
+- For rendered page images and scanned documents, the pipeline employs `RapidOCR` backed by ONNX Runtime.
+- Includes language-aware recognition dictionaries (`latin` and `thai`) to accurately transcribe diacritics and complex non-Latin scripts (e.g. Thai tax forms in `DU-05`).
 
-Your **final** standing is decided mostly by the **held-back** documents, graded the same way, which contain situations the open set does not — including at least one you will not have seen before at all. We report one number above your pass rate:
+### 2. Multi-Page Document Grouping & Classification
+- Analyzes layout headers, continuation footers, page numbering patterns ("Page 1 of 2"), and semantic signals.
+- Splits bundled PDFs into logical units (e.g., isolating invoice front pages from non-payable timesheets, packing slips, or vendor terms).
+- Identifies and routes supporting documents to `declined[]` with explicit audit reasons rather than polluting the accounting ledger.
 
-> **the distance between how well you do in the open and how well you do on the held-back set.**
+### 3. High-Precision Master Data Matching
+Master reference resolution is isolated into specialized matchers in `src/matching/`:
+- **Supplier Matching**: Priority cascade: Tax ID/VAT lookup -> exact normalized name -> alias matching -> token-set ratio fuzzy matching against `master_data/suppliers.json`.
+- **Buyer Organization Resolution**: Hierarchical resolution matching the company name, business unit, and facility address against `master_data/chart_of_books.json`.
+- **Tax Classification**: Matches stated document tax rates and tax names (e.g., standard VAT, MwSt, NHIL, GETFund, COVID levy) against `master_data/tax_master.json`.
+- **Purchase Order & Terms Matching**: Extracts and verifies PO identifiers against `master_data/po_master.json` and parses terms like "Net 30" into standard payment term codes.
 
-A small distance means you understood the problem. A large one means you fitted the answers. You can make every open document book and still finish poorly if the way you did it falls apart the moment a document does something slightly new. Solving each document is not the same as solving *the problem*, and only one of those is being graded.
+### 4. 3-Way Reconciliation & Safety Gates
+Before emitting an autodraft as `SAFE_TO_AUTODRAFT`, the decision engine (`src/accounting/decision.py`) evaluates three concurrent mathematical views:
+1. **Document Stated Total**: What the invoice explicitly declares as owed.
+2. **Component Recomputation**: The sum of line items + taxes - discounts + freight/levies.
+3. **ERP Oracle Simulation**: The exact gross that `erp.py` computes from the structured payload.
+
+```text
+┌────────────────────────────────────────────────────────┐
+│                   Decision Statuses                    │
+├──────────────────────┬─────────────────────────────────┤
+│ SAFE_TO_AUTODRAFT    │ 3-way reconciliation matches to │
+│                      │ the cent. Emitted to payables[].│
+├──────────────────────┼─────────────────────────────────┤
+│ HOLD_FOR_REVIEW      │ Arithmetic matches but master   │
+│                      │ code is unverified or minor     │
+│                      │ field is ambiguous.             │
+├──────────────────────┼─────────────────────────────────┤
+│ UNSAFE_TO_AUTODRAFT  │ Arithmetic mismatch, multi-cur- │
+│                      │ rency conflict, or non-payable. │
+│                      │ Routed to declined[].           │
+└──────────────────────┴─────────────────────────────────┘
+```
 
 ---
 
-## Before you start (read this last, then reread it on day two)
+## 7. Testing & Quality Assurance
 
-The obvious approach — read the fields, fill the record — will book perhaps a third of these, and then stall, and the failures will not look like they have anything in common. There is no list of special cases to implement; if you find yourself building one, adding a branch each time a document defeats you, stop: that growing list is the symptom this problem is designed to produce in people who have not yet seen it whole.
+The codebase includes an extensive suite of unit, integration, and regression tests.
 
-Past that stall there is a shift in how you picture *what one of these documents actually is* — after which the failures stop being a dozen unrelated bugs and become one thing wearing a dozen masks.
+```bash
+# Run the complete test suite
+pytest
+```
 
-We are not going to tell you what that shift is. Arriving at it, unaided, is the exam.
+### Test Suite Summary
+- **Total Test Files**: 28 modules in `tests/`
+- **Total Tests**: 738 tests (732 passing)
+- **Coverage Areas**:
+  - `test_pdf/`: Rendering fidelity and text extraction.
+  - `test_ocr.py`: RapidOCR ONNX provider and polygon bounding boxes.
+  - `test_master_data.py`: Supplier, buyer, tax, PO, and payment term matching algorithms.
+  - `test_document_grouper.py`: Multi-page bundle segmentation and role tagging.
+  - `test_candidate_extraction.py`: Pattern parsing across diverse invoice layouts.
+  - `test_reconciliation.py`: 3-way discrepancy checks and tolerance evaluation.
+  - `test_payable_decision.py`: End-to-end safety arbiter decisions on real corpus documents.
+
+---
+
+## 8. Design Reflections & Problem-Solving Approach
+
+### 1. What did we understand about these documents that wasn't obvious on day one?
+On day one, the challenge looks like an OCR and field-extraction task. It is not. The real problem is **structural accounting reconstruction**:
+- A document can state a line total that includes tax, while the ERP expects net lines with separate tax objects.
+- Placing a tax at the header when the document charged it per-line produces the same arithmetic total, but violates the ERP's placement semantics.
+- Documents are often multi-currency bundles (e.g. `DU-02` contains a primary EUR invoice attached to TRY expense receipts). Treating the bundle as a single document corrupts the payable.
+
+### 2. When the system encounters an unseen document, what does it do?
+The system relies on **layered deterministic grounding**:
+1. It never guesses or hallucinates numbers to force a balance. If an item cannot be grounded in the text, it is omitted.
+2. If evidence is ambiguous, the safety arbiter flags the record as `HOLD_FOR_REVIEW` or `UNSAFE_TO_AUTODRAFT` rather than submitting an ungrounded draft.
+3. Master data matching uses conservative confidence thresholds; when no entry matches confidently, the field remains empty as permitted by the schema.
+
+### 3. Documents requiring specialized handling
+- **`DU-02` (Multi-Currency Bundle)**: Contains an overarching EUR summary followed by individual TRY supporting vouchers. The document grouper and currency boundary detector isolate the primary payable from supporting evidence.
+- **`DU-05` (Multilingual Thai Invoice)**: Standard Latin OCR fails on Thai script. Integrating PP-OCRv5 Thai ONNX models alongside language routing enables clean text acquisition without external cloud dependencies.
+- **`INV-19` (Compound Levies & Service Quantity)**: Contains compound auxiliary taxes (NHIL, GETFund, COVID Levy) and flat service fees where unit price equals total amount. Handled by structured tax-line normalization preserving placement and quantity defaults.
+
+---
+
+## 9. Submission Details
+
+- **Repository**: [https://github.com/prabhattm04/payable-automation.git](https://github.com/prabhattm04/payable-automation.git)
+- **Author**: Prabhat
+- **Submission Date**: September 2026
